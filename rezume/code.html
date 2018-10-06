@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="style1.css" type="text/css" rel="stylesheet">
+    <title>Quadratic-equation Code</title>
+</head>
+    <body>
+        <h1>Quadratic-equation Code</h1>
+        <div>SolveEquation function solves Quadratic equation</div>
+        <code>
+            <pre>
+            module.exports = function solveEquation(equation = '') {
+                equation = equation.replace(/\s/g, '');
+                const arr =[];
+                function cut (strS, firstF, secondS){
+                    let ret = '';
+                    for (let j=firstF; j&lt;secondS; j++){ 
+                        ret=ret+strS[j];
+                    }
+                    ret=ret.replace(/\s/g, ''); 
+                    return ret;
+                }
+                if ( equation.indexOf('*')!==-1 && equation.indexOf('^2')!==-1 && equation.indexOf('*x', equation.indexOf('^2'))!==-1 ){ 
+                    let a = Number( cut(equation, 0, equation.indexOf('*')) ); 
+                    let b = Number( cut(equation, equation.indexOf('^2')+2, equation.indexOf('*x', equation.indexOf('^2'))) ); 
+                    let c = Number( cut(equation, equation.indexOf('*x', equation.indexOf('^2'))+2, equation.length) ); 
+                    let D = Math.pow(b, 2)-4*c*a; 
+                    if (D>=0){ 
+                       arr.push( Math.round( (-b-Math.sqrt(D))/(2*a) ) ); 
+                       arr.push( Math.round( (-b+Math.sqrt(D))/(2*a) ) ); 
+                    }
+                    else return "There is no answers"; 
+                    arr.sort(FunctSort = (left, right) => left - right); 
+                    return arr; 
+                }
+                else return "Erro"; 
+            } 
+            </pre>
+        </code>
+    </body>
+</html>
