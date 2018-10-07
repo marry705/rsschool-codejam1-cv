@@ -4,43 +4,38 @@
     <meta charset="utf-8">
     <link href="style1.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
-    <title>Quadratic-equation Code</title>
+    <title>LoveTrianglesCount Code</title>
 </head>
     <body>
-        <h1 class="HCode">Quadratic-equation Code</h1>
-        <article class="commit">
-            <div>
-                SolveEquation function solves Quadratic equation.
+        <h1 class="HCode">LoveTrianglesCount Code</h1>
+        <section class="commit">
+            <div>              
+                The getLoveTrianglesCount function calculates the number of love triangles. 
+                The function takes an array of integers as the only parameter. 
+                The integer k-th element on n-th place means, that the n-th element loves the k-th element.
             </div>
-        </article>
+        </section>
         <code class="code">
             <pre>
-            <b>function</b> solveEquation(equation = '') {
-                equation = equation.replace(/\s/g, '');
-                const arr =[];
-                function cut (strS, firstF, secondS){
-                    let ret = '';
-                    for (let j=firstF; j&lt;secondS; j++){ 
-                        ret=ret+strS[j];
+            <b>function</b> getLoveTrianglesCount (preferences = []) {
+                let numberTriangles=0;
+                let pos=0;
+                let value=0;
+                let rez=0;
+                for (let i = 0; i &lt; preferences.length; i++) {
+                    pos=preferences[i]-1; 
+                    if (pos &lt; preferences.length && pos>=0) {
+                        value=preferences[pos]; 
+                        for (let j = 0; j &lt; preferences.length; j++) {          
+                            if (preferences[j]===i+1) { 
+                                if (value===j+1) numberTriangles++;
+                            } 
+                        }
                     }
-                    ret=ret.replace(/\s/g, ''); 
-                    <b>return ret</b>;
                 }
-                if ( equation.indexOf('*')!==-1 && equation.indexOf('^2')!==-1 && equation.indexOf('*x', equation.indexOf('^2'))!==-1 ){ 
-                    let a = Number( cut(equation, 0, equation.indexOf('*')) ); 
-                    let b = Number( cut(equation, equation.indexOf('^2')+2, equation.indexOf('*x', equation.indexOf('^2'))) ); 
-                    let c = Number( cut(equation, equation.indexOf('*x', equation.indexOf('^2'))+2, equation.length) ); 
-                    let D = Math.pow(b, 2)-4*c*a; 
-                    if (D>=0){ 
-                       arr.push( Math.round( (-b-Math.sqrt(D))/(2*a) ) ); 
-                       arr.push( Math.round( (-b+Math.sqrt(D))/(2*a) ) ); 
-                    }
-                    else <b>return "There is no answers"</b>; 
-                    arr.sort(FunctSort = (left, right) => left - right); 
-                    <b>return arr</b>; 
-                }
-                else <b>return "Erro"</b>; 
-            } 
+                rez=Math.floor(numberTriangles/3);
+                <b>return rez</b>;
+            }
             </pre>
         </code>
     </body>

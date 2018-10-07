@@ -9,7 +9,7 @@ body{
    text-transform: uppercase;
    font-size: 28px;
    color: rgba(102,0,0,1) ;
-   margin: 10px 10px;
+   margin: 10px 10px 5px 10px;
 }
 
 .commit{
@@ -18,14 +18,16 @@ body{
     font-weight: normal;
     font-size: 20px;
     color: rgba(102,0,0,1) ; 
+    margin: 10px 10px 5px 10px;
 }
 
 .code{
     font-family: 'Nunito', sans-serif;
     text-align: left;
+    width: 100%;
     font-weight: normal;
+    list-style-type: square;
     font-size: 18px;
-    word-spacing: 0.10em; 
-    margin: 5px 10px;
+    word-spacing: 2px; 
     color: rgba(0,0,0,1);     
 }
