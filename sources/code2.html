@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
+    <title>Longest-consecutive-sequence Code</title>
+</head>
+    <body>
+        <h1 class="HCode">Longest-consecutive-sequence Code</h1>
+        <article class="commit">
+            <div>
+                The function searches the unsorted array for the longest sequence of numbers with a stripe one.
+            </div>
+        </article>
+        <code class="code">
+            <pre>
+            <b>function</b> longestConsecutiveLength (array = []) {
+                let len = array.length;
+                let leng = (len === 0)?0:1;
+                let lengmax = (len === 0)?0:1;
+                array.sort((left, right) => left - right);
+                    for (let i = 0; i &lt; len-1; i++){ 
+                        if (array[i+1]-array[i] === 1) {
+                            leng++; 
+                            lengmax = (leng>=lengmax)?leng:lengmax; 
+                        }
+                        else { 
+                            if (array[i+1] === array[i]) lengmax = (leng>=lengmax)?leng:lengmax; 
+                            else leng = 1;
+                        }   
+                    } 
+                <b>return lengmax</b>;
+            }
+            </pre>
+        </code>
+    </body>
+</html>

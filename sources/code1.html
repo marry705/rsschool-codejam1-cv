@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
+    <title>Smart-calculator Code</title>
+</head>
+    <body>
+        <h1 class="HCode">Smart-calculator Code</h1>
+        <article class="commit">
+            <div>
+                Class SmartCalculator. All methods in class are chainable. 
+                The priority of different operations are kept in mind.
+            </div>
+        </article>
+        <code class="code">
+            <pre>
+            <b>class</b> SmartCalculator {
+
+                <b>constructor</b> (initialValue) {
+                    this._number = ' ' + initialValue;
+                }
+                      
+                <b>toString</b> () { <i>// переопределение бызовой функции</i>
+                    <b>return eval(this._number)</b>;
+                }
+                      
+                <b>add</b> (operand = 0) {
+                    this._number = this._number + '+' + operand;
+                    <b>return this</b>; <i>// для последовательного вызова функции</i>
+                }
+                      
+                <b>subtract</b> (operand = 0){
+                    this._number = this._number + '-' + operand;
+                    <b>return this</b>;
+                }
+                      
+                <b>multiply</b> (operand = 1) {
+                    this._number = this._number + '*' + operand;
+                    <b>return this</b>;
+                }
+                      
+                <b>devide</b> (operand = 1){
+                    this._number = this._number + '/' + operand;
+                    <b>return this</b>;
+                }
+                      
+                <b>pow</b> (operand = 1){
+                    this._number = this._number + '**' + operand;
+                    <b>return this</b>;
+                }
+            }
+            </pre>
+        </code>
+    </body>
+</html>

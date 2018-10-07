@@ -1,0 +1,93 @@
+body{
+    background-color:rgba(243,243,243,1) ;
+}
+.fig{
+    margin: 100px 100px 100px 100px;
+}
+.fig h1{
+   font-family: 'Titillium Web', sans-serif; 
+   text-align: center;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 60px;
+   color: rgba(102,0,0,1) ;
+   height: 400px;
+}
+.fig img{
+    border-radius: 400px;
+    float: left;
+    width: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    -ms-border-radius: 400px;
+    -o-border-radius: 400px;
+    /*margin: 10px 10px 20px 10px;*/
+}
+.nav li{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    word-spacing: 2px;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8);
+    margin: 10px 10px 10px 0px; 
+}
+h2{
+    font-family: 'Titillium Web', sans-serif; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgba(102,0,0,1) ;
+}
+section{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;   
+ }
+ #basic_inf table{
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left; 
+ }
+ #basic_inf table td {
+    border-bottom: 1px solid rgba(230,230,230,1);
+    padding: 9px 8px;
+    transition: .3s linear;
+  }
+ #experience table{
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;  
+ }
+ #experience table td {
+    border-top: 1px solid rgba(230,230,230,1);
+    padding: 10px 15px;
+    transition: .3s linear;
+  }
+ #prof_skills table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;    
+ }
+ #prof_skills table td {
+    border-top: 1px solid rgba(230,230,230,1);
+    padding: 10px 15px;
+    transition: .3s linear;
+  }
+ #pers_skills ul{
+    list-style-type: square;
+    text-align: left; 
+ }
+ #portfol ul{
+    list-style-type: square; 
+    text-align: left;     
+ }
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
+    <title>LoveTrianglesCount Code</title>
+</head>
+    <body>
+        <h1 class="HCode">LoveTrianglesCount Code</h1>
+        <section class="commit">
+            <div>              
+                The getLoveTrianglesCount function calculates the number of love triangles. 
+                The function takes an array of integers as the only parameter. 
+                The integer k-th element on n-th place means, that the n-th element loves the k-th element.
+            </div>
+        </section>
+        <code class="code">
+            <pre>
+            <b>function</b> getLoveTrianglesCount (preferences = []) {
+                let numberTriangles=0;
+                let pos=0;
+                let value=0;
+                let rez=0;
+                for (let i = 0; i &lt; preferences.length; i++) {
+                    pos=preferences[i]-1; 
+                    if (pos &lt; preferences.length && pos>=0) {
+                        value=preferences[pos]; 
+                        for (let j = 0; j &lt; preferences.length; j++) {          
+                            if (preferences[j]===i+1) { 
+                                if (value===j+1) numberTriangles++;
+                            } 
+                        }
+                    }
+                }
+                rez=Math.floor(numberTriangles/3);
+                <b>return rez</b>;
+            }
+            </pre>
+        </code>
+    </body>
+</html>
