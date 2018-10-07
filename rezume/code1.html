@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href="style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
     <title>Smart-calculator Code</title>
 </head>
     <body>
@@ -15,39 +16,39 @@
         </article>
         <code class="code">
             <pre>
-            class SmartCalculator {
+            <b>class</b> SmartCalculator {
 
-                constructor(initialValue) {
-                this._number = ' ' + initialValue;
+                <b>constructor</b> (initialValue) {
+                    this._number = ' ' + initialValue;
                 }
                       
-                toString() { // переопределение бызовой функции
-                    return eval(this._number);
+                <b>toString</b> () { <i>// переопределение бызовой функции</i>
+                    <b>return eval(this._number)</b>;
                 }
                       
-                add(operand = 0) {
+                <b>add</b> (operand = 0) {
                     this._number = this._number + '+' + operand;
-                    return this; // для последовательного вызова функции
+                    <b>return this</b>; <i>// для последовательного вызова функции</i>
                 }
                       
-                subtract(operand = 0){
+                <b>subtract</b> (operand = 0){
                     this._number = this._number + '-' + operand;
-                    return this;
+                    <b>return this</b>;
                 }
                       
-                multiply(operand = 1) {
+                <b>multiply</b> (operand = 1) {
                     this._number = this._number + '*' + operand;
-                    return this;
+                    <b>return this</b>;
                 }
                       
-                devide(operand = 1){
+                <b>devide</b> (operand = 1){
                     this._number = this._number + '/' + operand;
-                    return this;
+                    <b>return this</b>;
                 }
                       
-                pow(operand = 1){
+                <b>pow</b> (operand = 1){
                     this._number = this._number + '**' + operand;
-                    return this;
+                    <b>return this</b>;
                 }
             }
             </pre>

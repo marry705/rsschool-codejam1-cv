@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href="style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
     <title>Longest-consecutive-sequence Code</title>
 </head>
     <body>
@@ -14,7 +15,7 @@
         </article>
         <code class="code">
             <pre>
-            module.exports = function longestConsecutiveLength(array = []) {
+            <b>function</b> longestConsecutiveLength (array = []) {
                 let len = array.length;
                 let leng = (len === 0)?0:1;
                 let lengmax = (len === 0)?0:1;
@@ -29,7 +30,7 @@
                             else leng = 1;
                         }   
                     } 
-                return lengmax;
+                <b>return</b> lengmax;
             }
             </pre>
         </code>

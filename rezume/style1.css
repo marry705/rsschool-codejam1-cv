@@ -1,25 +1,31 @@
+body{
+    background-color: rgba(255,255,204,1);
+}
+
 .HCode{
-   font-family: 'Times New Roman', Times, serif;
+   font-family: 'Dosis', sans-serif;  
    text-align: center;
    font-weight: bold;
-   font-size: 20 px;
-   color: black; 
+   text-transform: uppercase;
+   font-size: 28px;
+   color: rgba(102,0,0,1) ;
+   margin: 10px 10px;
 }
 
 .commit{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Dosis', sans-serif;
     text-align: center;
     font-weight: normal;
-    font-size: 16 px;
-    word-spacing: 0.25em ;
-    color: black; 
+    font-size: 20px;
+    color: rgba(102,0,0,1) ; 
 }
 
 .code{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
     text-align: left;
     font-weight: normal;
-    font-size: 14px;
-    word-spacing: 0.10em ;
-    color: black; 
+    font-size: 18px;
+    word-spacing: 0.10em; 
+    margin: 5px 10px;
+    color: rgba(0,0,0,1);     
 }

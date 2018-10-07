@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href="style1.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito" rel="stylesheet">
     <title>Quadratic-equation Code</title>
 </head>
     <body>
@@ -14,7 +15,7 @@
         </article>
         <code class="code">
             <pre>
-            module.exports = function solveEquation(equation = '') {
+            <b>function</b> solveEquation(equation = '') {
                 equation = equation.replace(/\s/g, '');
                 const arr =[];
                 function cut (strS, firstF, secondS){
@@ -23,7 +24,7 @@
                         ret=ret+strS[j];
                     }
                     ret=ret.replace(/\s/g, ''); 
-                    return ret;
+                    <b>return ret</b>;
                 }
                 if ( equation.indexOf('*')!==-1 && equation.indexOf('^2')!==-1 && equation.indexOf('*x', equation.indexOf('^2'))!==-1 ){ 
                     let a = Number( cut(equation, 0, equation.indexOf('*')) ); 
@@ -34,11 +35,11 @@
                        arr.push( Math.round( (-b-Math.sqrt(D))/(2*a) ) ); 
                        arr.push( Math.round( (-b+Math.sqrt(D))/(2*a) ) ); 
                     }
-                    else return "There is no answers"; 
+                    else <b>return "There is no answers"</b>; 
                     arr.sort(FunctSort = (left, right) => left - right); 
-                    return arr; 
+                    <b>return arr</b>; 
                 }
-                else return "Erro"; 
+                else <b>return "Erro"</b>; 
             } 
             </pre>
         </code>
