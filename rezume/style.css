@@ -1,2 +1,102 @@
+body{
+    background-color:rgba(243,243,243,1) ;
+}
 
- 
+h1{
+   font-family: 'Titillium Web', sans-serif; 
+   text-align: center;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 60px;
+   color: rgba(102,0,0,1) ;
+   height: 400px;
+   margin: 20px 50px 0px 0px;
+}
+.img{
+    border-radius: 400px;
+    float: left;
+    width: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    -ms-border-radius: 400px;
+    -o-border-radius: 400px;
+    margin: 10px 10px 20px 10px;
+}
+.nav li{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    word-spacing: 2px;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(204, 120, 120) ;
+    margin: 10px 10px 10px 0px; 
+}
+h2{
+    font-family: 'Titillium Web', sans-serif; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgba(102,0,0,1) ;
+}
+#basic_inf{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;   
+ }
+ #education{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    word-spacing: 2px;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;   
+ }
+ #about{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;   
+ }
+ #experience{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;   
+ }
+ #prof_skills{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8);   
+    float: left;
+ }
+ #pers_skills{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;  
+    float: right;   
+ }
+ #portfol{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(49, 8, 8); 
+    margin: 10px 10px;     
+ }
+
+
+
