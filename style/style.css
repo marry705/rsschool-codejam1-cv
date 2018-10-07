@@ -1,8 +1,10 @@
 body{
     background-color:rgba(243,243,243,1) ;
 }
-
-h1{
+.fig{
+    margin: 100px 100px 100px 100px;
+}
+.fig h1{
    font-family: 'Titillium Web', sans-serif; 
    text-align: center;
    font-weight: bold;
@@ -10,9 +12,8 @@ h1{
    font-size: 60px;
    color: rgba(102,0,0,1) ;
    height: 400px;
-   margin: 20px 50px 0px 0px;
 }
-.img{
+.fig img{
     border-radius: 400px;
     float: left;
     width: 400px;
@@ -20,7 +21,7 @@ h1{
     -moz-border-radius: 400px;
     -ms-border-radius: 400px;
     -o-border-radius: 400px;
-    margin: 10px 10px 20px 10px;
+    /*margin: 10px 10px 20px 10px;*/
 }
 .nav li{
     font-family: 'Dosis', sans-serif;
