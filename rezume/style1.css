@@ -1,0 +1,25 @@
+.HCode{
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20 px;
+   color: black; 
+}
+
+.commit{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16 px;
+    word-spacing: 0.25em ;
+    color: black; 
+}
+
+.code{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    word-spacing: 0.10em ;
+    color: black; 
+}

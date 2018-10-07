@@ -6,44 +6,50 @@
     <title>Smart-calculator Code</title>
 </head>
     <body>
-        <h1>Smart-calculator Code</h1>
-        <div>Class SmartCalculator. All methods in class are chainable. The priority of different operations are kept in mind.</div>
-        <code>
+        <h1 class="HCode">Smart-calculator Code</h1>
+        <article class="commit">
+            <div>
+                Class SmartCalculator. All methods in class are chainable. 
+                The priority of different operations are kept in mind.
+            </div>
+        </article>
+        <code class="code">
             <pre>
-                class SmartCalculator {
-                    constructor(initialValue) {
-                        this._number = ' ' + initialValue;
-                    }
-                      
-                    toString() { // переопределение бызовой функции
-                        return eval(this._number);
-                    }
-                      
-                    add(operand = 0) {
-                        this._number = this._number + '+' + operand;
-                        return this; // для последовательного вызова функции
-                    }
-                      
-                    subtract(operand = 0){
-                        this._number = this._number + '-' + operand;
-                        return this;
-                    }
-                      
-                    multiply(operand = 1) {
-                        this._number = this._number + '*' + operand;
-                        return this;
-                    }
-                      
-                    devide(operand = 1){
-                        this._number = this._number + '/' + operand;
-                        return this;
-                    }
-                      
-                    pow(operand = 1){
-                        this._number = this._number + '**' + operand;
-                        return this;
-                    }
+            class SmartCalculator {
+
+                constructor(initialValue) {
+                this._number = ' ' + initialValue;
                 }
+                      
+                toString() { // переопределение бызовой функции
+                    return eval(this._number);
+                }
+                      
+                add(operand = 0) {
+                    this._number = this._number + '+' + operand;
+                    return this; // для последовательного вызова функции
+                }
+                      
+                subtract(operand = 0){
+                    this._number = this._number + '-' + operand;
+                    return this;
+                }
+                      
+                multiply(operand = 1) {
+                    this._number = this._number + '*' + operand;
+                    return this;
+                }
+                      
+                devide(operand = 1){
+                    this._number = this._number + '/' + operand;
+                    return this;
+                }
+                      
+                pow(operand = 1){
+                    this._number = this._number + '**' + operand;
+                    return this;
+                }
+            }
             </pre>
         </code>
     </body>
