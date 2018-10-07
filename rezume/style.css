@@ -28,7 +28,7 @@ h1{
     word-spacing: 2px;
     font-weight: normal;
     font-size: 20px;
-    color: rgb(204, 120, 120) ;
+    color: rgb(49, 8, 8);
     margin: 10px 10px 10px 0px; 
 }
 h2{
@@ -39,24 +39,7 @@ h2{
     font-size: 30px;
     color: rgba(102,0,0,1) ;
 }
-#basic_inf{
-    font-family: 'Dosis', sans-serif;
-    text-align: left;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8); 
-    margin: 10px 10px;   
- }
- #education{
-    font-family: 'Dosis', sans-serif;
-    text-align: left;
-    word-spacing: 2px;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8); 
-    margin: 10px 10px;   
- }
- #about{
+section{
     font-family: 'Dosis', sans-serif;
     text-align: center;
     font-weight: normal;
@@ -64,38 +47,49 @@ h2{
     color: rgb(49, 8, 8); 
     margin: 10px 10px;   
  }
- #experience{
-    font-family: 'Dosis', sans-serif;
-    text-align: left;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8); 
-    margin: 10px 10px;   
+ #basic_inf table{
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left; 
  }
- #prof_skills{
-    font-family: 'Dosis', sans-serif;
-    text-align: left;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8);   
+ #basic_inf table td {
+    border-bottom: 1px solid #ccc;
+    padding: 9px 8px;
+    transition: .3s linear;
+  }
+ #experience table{
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;  
+ }
+ #experience table td {
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+  }
+ #prof_skills table{
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;    
+ }
+ #prof_skills table td {
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+  }
+ #prof_skills{  
     float: left;
  }
- #pers_skills{
-    font-family: 'Dosis', sans-serif;
+ #pers_skills li{
     text-align: left;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8); 
-    margin: 10px 10px;  
-    float: right;   
+    word-spacing: 2px;
+    margin: 10px 10px 50px 10px;  
  }
- #portfol{
-    font-family: 'Dosis', sans-serif;
+ #portfol li{
     text-align: left;
-    font-weight: normal;
-    font-size: 20px;
-    color: rgb(49, 8, 8); 
-    margin: 10px 10px;     
+    word-spacing: 2px;
+    margin: 10px 10px 50px 10px;      
  }
 
 
