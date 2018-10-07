@@ -54,7 +54,7 @@ section{
     text-align: left; 
  }
  #basic_inf table td {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(230,230,230,1);
     padding: 9px 8px;
     transition: .3s linear;
   }
@@ -65,31 +65,27 @@ section{
     text-align: left;  
  }
  #experience table td {
-    border-top: 1px solid #e8edff;
+    border-top: 1px solid rgba(230,230,230,1);
     padding: 10px 15px;
+    transition: .3s linear;
   }
  #prof_skills table{
-    max-width: 70%;
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
     text-align: left;    
  }
  #prof_skills table td {
-    border-top: 1px solid #e8edff;
+    border-top: 1px solid rgba(230,230,230,1);
     padding: 10px 15px;
+    transition: .3s linear;
   }
- #prof_skills{  
-    float: left;
+ #pers_skills ul{
+    list-style-type: square;
+    text-align: left; 
  }
- #pers_skills li{
-    text-align: left;
-    word-spacing: 2px;
-    margin: 10px 10px 50px 10px;  
- }
- #portfol li{
-    text-align: left;
-    word-spacing: 2px;
-    margin: 10px 10px 50px 10px;      
+ #portfol ul{
+    list-style-type: square; 
+    text-align: left;     
  }
 
 
